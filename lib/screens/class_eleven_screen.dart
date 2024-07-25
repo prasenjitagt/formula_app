@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:formula_app/data/eleven_chapter_name_data.dart';
+import 'package:formula_app/widgets/list_tile_for_chapters.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:tex_text/tex_text.dart';
 
 class ClassElevenScreen extends StatelessWidget {
   const ClassElevenScreen({super.key, required this.appBarTitle});
@@ -15,7 +16,14 @@ class ClassElevenScreen extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Center(child: TexText(r"$\frac{a}{\sqrt{b}}$")),
+      body: ListView(
+        padding: EdgeInsets.symmetric(horizontal: 20),
+
+        // children: [for (final Chapter in elevenChapterDetails) Text("data")],
+        children: elevenChapterDetails.map((eachChapter) {
+          return ListTileForChapters(chapterDetails: eachChapter);
+        }).toList(),
+      ),
     );
   }
 }
