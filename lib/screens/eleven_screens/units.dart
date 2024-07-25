@@ -21,15 +21,9 @@ class Units extends StatelessWidget {
         children: [
           UnitsDimensionalFormula(),
           SizedBox(height: 10),
-          Container(
-              margin: EdgeInsets.symmetric(horizontal: 15),
-              decoration: BoxDecoration(border: Border.all(width: 1)),
-              child: DoubleTapWidget(imageHeight: 145, imageName: "unit1.png")),
+          DoubleTapWidget(imageHeight: 145, imageName: "unit1.png"),
           SizedBox(height: 10),
-          Container(
-              margin: EdgeInsets.symmetric(horizontal: 15),
-              decoration: BoxDecoration(border: Border.all(width: 1)),
-              child: DoubleTapWidget(imageHeight: 105, imageName: "unit2.png")),
+          DoubleTapWidget(imageHeight: 105, imageName: "unit2.png"),
           SizedBox(height: 10),
           DoubleTapWidget(imageHeight: 240, imageName: "unit3.png"),
           SizedBox(height: 10),

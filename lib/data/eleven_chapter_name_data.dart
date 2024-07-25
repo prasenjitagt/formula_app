@@ -1,4 +1,6 @@
 import 'package:formula_app/models/chapter_name_model.dart';
+import 'package:formula_app/screens/eleven_screens/plane.dart';
+import 'package:formula_app/screens/eleven_screens/straight_line.dart';
 import 'package:formula_app/screens/eleven_screens/units.dart';
 
 const elevenChapterDetails = [
@@ -12,13 +14,13 @@ const elevenChapterDetails = [
     ChapterName: "Motion in a Straight Line",
     ChapterNumber: 2,
     ChapterImageName: "11ch2.png",
-    ChapterPageWidget: null,
+    ChapterPageWidget: StraightLine(),
   ),
   ChapterNameModel(
     ChapterName: "Motion in a plane",
     ChapterNumber: 3,
     ChapterImageName: "11ch3.png",
-    ChapterPageWidget: null,
+    ChapterPageWidget: Plane(),
   ),
   // ChapterNameModel(
   //   ChapterName: "Laws of Motion",

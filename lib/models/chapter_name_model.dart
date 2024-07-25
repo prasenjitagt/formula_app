@@ -11,5 +11,5 @@ class ChapterNameModel {
   final String ChapterName;
   final String ChapterImageName;
   final int ChapterNumber;
-  final Widget? ChapterPageWidget;
+  final Widget ChapterPageWidget;
 }

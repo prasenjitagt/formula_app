@@ -9,7 +9,7 @@ class UnitTextWidget extends StatelessWidget {
     return TexText(
       equationText,
       style: TextStyle(
-        fontSize: 18,
+        fontSize: 15,
       ),
     );
   }

@@ -44,12 +44,16 @@ class _DoubleTapWidgetState extends State<DoubleTapWidget> {
     return GestureDetector(
       onDoubleTapDown: (details) => tapDownDetails = details,
       onDoubleTap: _handleDoubleTap,
-      child: InteractiveViewer(
-        transformationController: imageTransformationController,
-        maxScale: 2.0,
-        child: Image.asset(
-          "assets/images/${widget.imageName}",
-          height: widget.imageHeight,
+      child: Container(
+        margin: EdgeInsets.symmetric(horizontal: 15),
+        decoration: BoxDecoration(border: Border.all(width: 1)),
+        child: InteractiveViewer(
+          transformationController: imageTransformationController,
+          maxScale: 2.0,
+          child: Image.asset(
+            "assets/images/${widget.imageName}",
+            height: widget.imageHeight,
+          ),
         ),
       ),
     );
