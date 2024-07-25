@@ -11,7 +11,6 @@ class UnitsDimensionalFormula extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 15),
-      // padding: EdgeInsets.only(left: 4, right: 4, bottom: 4),
       padding: EdgeInsets.all(4),
       decoration: BoxDecoration(border: Border.all(width: 1)),
       child: InteractiveViewer(

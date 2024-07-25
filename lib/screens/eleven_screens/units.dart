@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:formula_app/widgets/units_dimesional_formula.dart';
+import 'package:formula_app/widgets/unit_double_tap_widget.dart';
+import 'package:formula_app/widgets/unit_dimesional_formula.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Units extends StatelessWidget {
@@ -20,28 +21,17 @@ class Units extends StatelessWidget {
         children: [
           UnitsDimensionalFormula(),
           SizedBox(height: 10),
-          InteractiveViewer(
-              maxScale: 2.0,
-              child: Image.asset(
-                "assets/images/unit1.png",
-                height: 145,
-              )),
+          Container(
+              margin: EdgeInsets.symmetric(horizontal: 15),
+              decoration: BoxDecoration(border: Border.all(width: 1)),
+              child: DoubleTapWidget(imageHeight: 145, imageName: "unit1.png")),
           SizedBox(height: 10),
-          InteractiveViewer(
-            maxScale: 2.0,
-            child: Image.asset(
-              "assets/images/unit2.png",
-              height: 105,
-            ),
-          ),
+          Container(
+              margin: EdgeInsets.symmetric(horizontal: 15),
+              decoration: BoxDecoration(border: Border.all(width: 1)),
+              child: DoubleTapWidget(imageHeight: 105, imageName: "unit2.png")),
           SizedBox(height: 10),
-          InteractiveViewer(
-            maxScale: 2.0,
-            child: Image.asset(
-              "assets/images/unit3.png",
-              height: 240,
-            ),
-          ),
+          DoubleTapWidget(imageHeight: 240, imageName: "unit3.png"),
           SizedBox(height: 10),
         ],
       ),
