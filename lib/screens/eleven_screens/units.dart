@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:formula_app/widgets/custom_app_bar_title.dart';
 import 'package:formula_app/widgets/unit_double_tap_widget.dart';
 import 'package:formula_app/widgets/unit_dimesional_formula.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Units extends StatelessWidget {
   const Units({super.key});
@@ -11,10 +11,7 @@ class Units extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        title: Text(
-          "Units and Measurements",
-          style: GoogleFonts.aBeeZee(fontSize: 18),
-        ),
+        title: CustomAppBarTitle(titleText: "Units and Measurements"),
         centerTitle: true,
       ),
       body: ListView(

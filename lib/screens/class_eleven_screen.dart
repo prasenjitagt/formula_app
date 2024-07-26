@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/data/eleven_chapter_name_data.dart';
 import 'package:formula_app/widgets/list_tile_for_chapters.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ClassElevenScreen extends StatelessWidget {
   const ClassElevenScreen({super.key, required this.appBarTitle});
@@ -12,7 +11,7 @@ class ClassElevenScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           appBarTitle,
-          style: GoogleFonts.aBeeZee(fontSize: 25),
+          style: TextStyle(fontFamily: 'aBeeZee', fontSize: 25),
         ),
         centerTitle: true,
       ),

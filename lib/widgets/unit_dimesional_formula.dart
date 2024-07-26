@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/widgets/unit_text_widget.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class UnitsDimensionalFormula extends StatefulWidget {
   const UnitsDimensionalFormula({
@@ -62,7 +61,7 @@ class _UnitsDimensionalFormulaState extends State<UnitsDimensionalFormula> {
                 alignment: Alignment.center,
                 child: Text(
                   "DIMENSIONAL FORMULA",
-                  style: GoogleFonts.lato(fontSize: 18),
+                  style: TextStyle(fontFamily: "lato", fontSize: 18),
                 ),
               ),
               SizedBox(

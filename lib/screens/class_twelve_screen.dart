@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:tex_text/tex_text.dart';
 
 class ClassTwelveScreen extends StatelessWidget {
@@ -11,7 +10,7 @@ class ClassTwelveScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           appBarTitle,
-          style: GoogleFonts.aBeeZee(fontSize: 25),
+          style: TextStyle(fontFamily: "aBeeZee", fontSize: 25),
         ),
         centerTitle: true,
       ),

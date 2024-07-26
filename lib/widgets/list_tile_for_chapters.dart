@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/models/chapter_name_model.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ListTileForChapters extends StatelessWidget {
   const ListTileForChapters({super.key, required this.chapterDetails});
@@ -26,7 +25,8 @@ class ListTileForChapters extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 2.0),
               child: Text(
                 chapterDetails.ChapterName,
-                style: GoogleFonts.exo2(
+                style: TextStyle(
+                  fontFamily: "lato",
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
@@ -34,7 +34,8 @@ class ListTileForChapters extends StatelessWidget {
             ),
             trailing: Text(
               "${chapterDetails.ChapterNumber}",
-              style: GoogleFonts.exo(
+              style: TextStyle(
+                fontFamily: "lato",
                 fontWeight: FontWeight.bold,
                 fontSize: 15,
               ),

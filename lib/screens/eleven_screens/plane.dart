@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:formula_app/widgets/custom_app_bar_title.dart';
 import 'package:formula_app/widgets/my_divider.dart';
 import 'package:formula_app/widgets/unit_double_tap_widget.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Plane extends StatefulWidget {
   const Plane({super.key});
@@ -40,7 +40,13 @@ class _PlaneState extends State<Plane> {
   // This function is triggered when the user presses the back-to-top button
   void _scrollToTop() {
     _myScrollController.animateTo(0,
-        duration: const Duration(seconds: 1), curve: Curves.linear);
+        duration: const Duration(milliseconds: 1500), curve: Curves.easeInOut);
+  }
+
+  void _scrollToBottom() {
+    // var scrollValue = _myScrollController.position.maxScrollExtent;
+    _myScrollController.animateTo(20000,
+        duration: const Duration(milliseconds: 1500), curve: Curves.easeInOut);
   }
 
   @override
@@ -48,26 +54,27 @@ class _PlaneState extends State<Plane> {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        title: Text(
-          "Motion in a Plane",
-          style: GoogleFonts.aBeeZee(fontSize: 18),
-        ),
+        title: CustomAppBarTitle(titleText: "Motion in a Plane"),
         centerTitle: true,
       ),
-      floatingActionButton: _showBackToTopButton == false
-          ? null
-          : FloatingActionButton(
-              backgroundColor: Color.fromARGB(113, 255, 255, 255),
-              onPressed: _scrollToTop,
-              child: const Icon(Icons.arrow_upward),
-            ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Color.fromARGB(113, 255, 255, 255),
+        onPressed: _showBackToTopButton ? _scrollToTop : _scrollToBottom,
+        child: _showBackToTopButton
+            ? Icon(Icons.arrow_upward)
+            : Icon(Icons.arrow_downward),
+      ),
       body: ListView(
         controller: _myScrollController,
         children: [
           SizedBox(height: 10),
           Text(
             "VECTORS",
-            style: GoogleFonts.lato(fontSize: 18, fontWeight: FontWeight.bold),
+            style: TextStyle(
+              fontFamily: "lato",
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
             textAlign: TextAlign.center,
           ),
           SizedBox(height: 20),

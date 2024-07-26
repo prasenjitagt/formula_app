@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/widgets/list_tile_widget.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,7 +11,7 @@ class HomeScreen extends StatelessWidget {
         title: Center(
           child: Text(
             "Physics Formulas",
-            style: GoogleFonts.aBeeZee(fontSize: 25),
+            style: TextStyle(fontFamily: "aBeeZee", fontSize: 25),
           ),
         ),
       ),

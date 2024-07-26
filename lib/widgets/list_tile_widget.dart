@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/screens/class_eleven_screen.dart';
 import 'package:formula_app/screens/class_twelve_screen.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ListTileWidget extends StatelessWidget {
   const ListTileWidget(
@@ -22,14 +21,16 @@ class ListTileWidget extends StatelessWidget {
         ),
         title: Text(
           titleText,
-          style: GoogleFonts.exo2(
+          style: TextStyle(
+            fontFamily: "lato",
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),
         subtitle: Text(
           subTitleText,
-          style: GoogleFonts.exo(
+          style: TextStyle(
+            fontFamily: "lato",
             fontWeight: FontWeight.normal,
           ),
         ),

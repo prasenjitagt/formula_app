@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:formula_app/screens/eleven_screens/plane.dart';
+import 'package:formula_app/screens/eleven_screens/nlm.dart';
 import 'package:formula_app/screens/home_screen.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
         // title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
-        home: HomeScreen());
-    // home: Plane());
+        // home: HomeScreen());
+        home: NLM());
   }
 }

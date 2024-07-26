@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class MyDivider extends StatelessWidget {
   const MyDivider({
@@ -20,7 +19,11 @@ class MyDivider extends StatelessWidget {
         ),
         Text(
           dividerText,
-          style: GoogleFonts.lato(fontSize: 18, fontWeight: FontWeight.bold),
+          style: TextStyle(
+            fontFamily: "lato",
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+          ),
           textAlign: TextAlign.center,
         ),
         SizedBox(height: 20),

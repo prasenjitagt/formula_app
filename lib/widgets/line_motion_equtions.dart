@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/widgets/unit_text_widget.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class LineMotionEqutions extends StatefulWidget {
   const LineMotionEqutions({
@@ -61,14 +60,15 @@ class _LineMotionEqutionsState extends State<LineMotionEqutions> {
                 alignment: Alignment.center,
                 child: Text(
                   "EQUATIONS OF MOTION",
-                  style: GoogleFonts.lato(fontSize: 18),
+                  style: TextStyle(fontFamily: "lato", fontSize: 18),
                 ),
               ),
               Align(
                 alignment: Alignment.center,
                 child: Text(
                   "(VALID FOR CONSTANT ACCELARTION)",
-                  style: GoogleFonts.lato(
+                  style: TextStyle(
+                      fontFamily: "lato",
                       fontSize: 10,
                       fontWeight: FontWeight.w900,
                       color: Colors.red,

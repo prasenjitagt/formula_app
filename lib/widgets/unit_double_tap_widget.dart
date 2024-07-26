@@ -16,7 +16,7 @@ class _DoubleTapWidgetState extends State<DoubleTapWidget> {
 
   void _handleDoubleTap() {
     final position = tapDownDetails!.localPosition;
-    final double scale = 1.5;
+    final double scale = 2;
     final x = -position.dx * (scale - 1);
     final y = -position.dy * (scale - 1);
     final zoomed = Matrix4.identity()
@@ -50,14 +50,14 @@ class _DoubleTapWidgetState extends State<DoubleTapWidget> {
         decoration: BoxDecoration(border: Border.all(width: 1)),
         child: InteractiveViewer(
           transformationController: imageTransformationController,
-          maxScale: 2.0,
-          // child: Image.asset(
-          //   "assets/images/${widget.imageName}",
-          //   height: widget.imageHeight,
-          // ),
-          child: FadeInImage(
-              placeholder: MemoryImage(kTransparentImage),
-              image: AssetImage("assets/images/${widget.imageName}")),
+          maxScale: 5.0,
+          child: Image.asset(
+            "assets/images/${widget.imageName}",
+            height: widget.imageHeight,
+          ),
+          // child: FadeInImage(
+          //     placeholder: MemoryImage(kTransparentImage),
+          //     image: AssetImage("assets/images/${widget.imageName}")),
         ),
       ),
     );
