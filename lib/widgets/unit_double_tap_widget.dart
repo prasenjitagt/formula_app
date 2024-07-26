@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 class DoubleTapWidget extends StatefulWidget {
   const DoubleTapWidget(
@@ -50,10 +51,13 @@ class _DoubleTapWidgetState extends State<DoubleTapWidget> {
         child: InteractiveViewer(
           transformationController: imageTransformationController,
           maxScale: 2.0,
-          child: Image.asset(
-            "assets/images/${widget.imageName}",
-            height: widget.imageHeight,
-          ),
+          // child: Image.asset(
+          //   "assets/images/${widget.imageName}",
+          //   height: widget.imageHeight,
+          // ),
+          child: FadeInImage(
+              placeholder: MemoryImage(kTransparentImage),
+              image: AssetImage("assets/images/${widget.imageName}")),
         ),
       ),
     );
