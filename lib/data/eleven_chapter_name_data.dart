@@ -3,6 +3,7 @@ import 'package:formula_app/screens/eleven_screens/nlm.dart';
 import 'package:formula_app/screens/eleven_screens/plane.dart';
 import 'package:formula_app/screens/eleven_screens/straight_line.dart';
 import 'package:formula_app/screens/eleven_screens/units.dart';
+import 'package:formula_app/screens/eleven_screens/work.dart';
 
 const elevenChapterDetails = [
   ChapterNameModel(
@@ -29,12 +30,12 @@ const elevenChapterDetails = [
     ChapterImageName: "11ch4.png",
     ChapterPageWidget: NLM(),
   ),
-  // ChapterNameModel(
-  //   ChapterName: "Work, Energy and Power",
-  //   ChapterNumber: 5,
-  //   ChapterImageName: "11ch5.png",
-  //   ChapterPageWidget: null,
-  // ),
+  ChapterNameModel(
+    ChapterName: "Work, Energy and Power",
+    ChapterNumber: 5,
+    ChapterImageName: "11ch5.png",
+    ChapterPageWidget: Work(),
+  ),
   // ChapterNameModel(
   //   ChapterName: "Rotational Motion",
   //   ChapterNumber: 6,

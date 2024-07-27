@@ -25,12 +25,12 @@ class HomeScreen extends StatelessWidget {
               subTitleText: "14 Chapters",
               logoImgName: "11.png",
             ),
-            SizedBox(height: 10),
-            ListTileWidget(
-              titleText: "Class XII",
-              subTitleText: "14 Chapters",
-              logoImgName: "12.png",
-            ),
+            // SizedBox(height: 10),
+            // ListTileWidget(
+            //   titleText: "Class XII",
+            //   subTitleText: "14 Chapters",
+            //   logoImgName: "12.png",
+            // ),
           ],
         ),
       ),
