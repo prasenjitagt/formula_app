@@ -4,7 +4,8 @@ import 'package:formula_app/widgets/my_divider.dart';
 import 'package:formula_app/widgets/unit_double_tap_widget.dart';
 
 class Plane extends StatefulWidget {
-  const Plane({super.key});
+  const Plane({super.key, required this.appBarTitleText});
+  final String appBarTitleText;
 
   @override
   State<Plane> createState() => _PlaneState();
@@ -54,7 +55,7 @@ class _PlaneState extends State<Plane> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        title: const CustomAppBarTitle(titleText: "Motion in a Plane"),
+        title: CustomAppBarTitle(titleText: widget.appBarTitleText),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(

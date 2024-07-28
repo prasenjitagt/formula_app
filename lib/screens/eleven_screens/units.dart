@@ -4,14 +4,15 @@ import 'package:formula_app/widgets/unit_double_tap_widget.dart';
 import 'package:formula_app/widgets/unit_dimesional_formula.dart';
 
 class Units extends StatelessWidget {
-  const Units({super.key});
+  const Units({super.key, required this.appBarTitleText});
+  final String appBarTitleText;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        title: const CustomAppBarTitle(titleText: "Units and Measurements"),
+        title: CustomAppBarTitle(titleText: appBarTitleText),
         centerTitle: true,
       ),
       body: ListView(

@@ -4,14 +4,15 @@ import 'package:formula_app/widgets/line_motion_equtions.dart';
 import 'package:formula_app/widgets/unit_double_tap_widget.dart';
 
 class StraightLine extends StatelessWidget {
-  const StraightLine({super.key});
+  const StraightLine({super.key, required this.appBarTitleText});
+  final String appBarTitleText;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        title: const CustomAppBarTitle(titleText: "Motion in a Straight Line"),
+        title: CustomAppBarTitle(titleText: appBarTitleText),
         centerTitle: true,
       ),
       body: ListView(

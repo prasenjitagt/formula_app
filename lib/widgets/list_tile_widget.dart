@@ -12,6 +12,22 @@ class ListTileWidget extends StatelessWidget {
   final String subTitleText;
   final String logoImgName;
 
+  void _goToClass(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (ctx) {
+        if (titleText == "Class XI") {
+          return ClassElevenScreen(
+            appBarTitle: titleText,
+          );
+        } else {
+          return ClassTwelveScreen(
+            appBarTitle: titleText,
+          );
+        }
+      }),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -37,19 +53,7 @@ class ListTileWidget extends StatelessWidget {
         tileColor: const Color.fromARGB(164, 160, 246, 252),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         onTap: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (ctx) {
-              if (titleText == "Class XI") {
-                return ClassElevenScreen(
-                  appBarTitle: titleText,
-                );
-              } else {
-                return ClassTwelveScreen(
-                  appBarTitle: titleText,
-                );
-              }
-            }),
-          );
+          _goToClass(context);
         });
   }
 }

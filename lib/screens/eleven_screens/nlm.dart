@@ -4,7 +4,8 @@ import 'package:formula_app/widgets/my_divider.dart';
 import 'package:formula_app/widgets/unit_double_tap_widget.dart';
 
 class NLM extends StatefulWidget {
-  const NLM({super.key});
+  const NLM({super.key, required this.appBarTitleText});
+  final String appBarTitleText;
 
   @override
   State<NLM> createState() => _NLMState();
@@ -54,7 +55,7 @@ class _NLMState extends State<NLM> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        title: const CustomAppBarTitle(titleText: "Laws of Motion"),
+        title: CustomAppBarTitle(titleText: widget.appBarTitleText),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(

@@ -1,6 +1,7 @@
 import 'package:formula_app/models/chapter_name_model.dart';
 import 'package:formula_app/screens/eleven_screens/nlm.dart';
 import 'package:formula_app/screens/eleven_screens/plane.dart';
+import 'package:formula_app/screens/eleven_screens/rotational.dart';
 import 'package:formula_app/screens/eleven_screens/straight_line.dart';
 import 'package:formula_app/screens/eleven_screens/units.dart';
 import 'package:formula_app/screens/eleven_screens/work.dart';
@@ -10,38 +11,48 @@ const elevenChapterDetails = [
     chapterName: "Units and Measurement",
     chapterNumber: 1,
     chapterImageName: "11ch1.png",
-    chapterPageWidget: Units(),
+    chapterPageWidget: Units(
+      appBarTitleText: "Units and Measurement",
+    ),
   ),
   ChapterNameModel(
     chapterName: "Motion in a Straight Line",
     chapterNumber: 2,
     chapterImageName: "11ch2.png",
-    chapterPageWidget: StraightLine(),
+    chapterPageWidget: StraightLine(
+      appBarTitleText: "Motion in a Straight Line",
+    ),
   ),
   ChapterNameModel(
     chapterName: "Motion in a plane",
     chapterNumber: 3,
     chapterImageName: "11ch3.png",
-    chapterPageWidget: Plane(),
+    chapterPageWidget: Plane(
+      appBarTitleText: "Motion in a plane",
+    ),
   ),
   ChapterNameModel(
     chapterName: "Laws of Motion",
     chapterNumber: 4,
     chapterImageName: "11ch4.png",
-    chapterPageWidget: NLM(),
+    chapterPageWidget: NLM(
+      appBarTitleText: "Laws of Motion",
+    ),
   ),
   ChapterNameModel(
     chapterName: "Work, Energy and Power",
     chapterNumber: 5,
     chapterImageName: "11ch5.png",
-    chapterPageWidget: Work(),
+    chapterPageWidget: Work(
+      appBarTitleText: "Work, Energy and Power",
+    ),
   ),
-  // ChapterNameModel(
-  //   chapterName: "Rotational Motion",
-  //   chapterNumber: 6,
-  //   chapterImageName: "11ch6.png",
-  //   chapterPageWidget: null,
-  // ),
+  ChapterNameModel(
+    chapterName: "Rotational Motion",
+    chapterNumber: 6,
+    chapterImageName: "11ch6.png",
+    chapterPageWidget: Rotational(appBarTitleText: "Rotational Motion"),
+  ),
   // ChapterNameModel(
   //   chapterName: "Gravitation",
   //   chapterNumber: 7,

@@ -5,7 +5,8 @@ import 'package:formula_app/widgets/my_divider.dart';
 import 'package:formula_app/widgets/unit_double_tap_widget.dart';
 
 class Work extends StatefulWidget {
-  const Work({super.key});
+  const Work({super.key, required this.appBarTitleText});
+  final String appBarTitleText;
 
   @override
   State<Work> createState() => _WorkState();
@@ -55,7 +56,7 @@ class _WorkState extends State<Work> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        title: const CustomAppBarTitle(titleText: "Work, Energy and Power"),
+        title: CustomAppBarTitle(titleText: widget.appBarTitleText),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(
