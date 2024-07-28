@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:formula_app/screens/eleven_screens/nlm.dart';
+import 'package:formula_app/screens/eleven_screens/work.dart';
 import 'package:formula_app/screens/home_screen.dart';
 
 void main() {
@@ -16,6 +16,6 @@ class MyApp extends StatelessWidget {
         // title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
         // home: HomeScreen());
-        home: NLM());
+        home: Work());
   }
 }

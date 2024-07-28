@@ -16,7 +16,7 @@ class ListTileForChapters extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(7.0),
                 child: Image.asset(
-                  'assets/images/${chapterDetails.ChapterImageName}',
+                  'assets/images/${chapterDetails.chapterImageName}',
                   width: 35,
                 ),
               ),
@@ -24,8 +24,8 @@ class ListTileForChapters extends StatelessWidget {
             title: Padding(
               padding: const EdgeInsets.symmetric(vertical: 2.0),
               child: Text(
-                chapterDetails.ChapterName,
-                style: TextStyle(
+                chapterDetails.chapterName,
+                style: const TextStyle(
                   fontFamily: "lato",
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -33,22 +33,21 @@ class ListTileForChapters extends StatelessWidget {
               ),
             ),
             trailing: Text(
-              "${chapterDetails.ChapterNumber}",
-              style: TextStyle(
+              "${chapterDetails.chapterNumber}",
+              style: const TextStyle(
                 fontFamily: "lato",
                 fontWeight: FontWeight.bold,
                 fontSize: 15,
               ),
             ),
-            tileColor: Color.fromARGB(164, 160, 246, 252),
+            tileColor: const Color.fromARGB(164, 160, 246, 252),
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
             onTap: () {
               Navigator.of(context).push(MaterialPageRoute(
-                  builder: (ctx) =>
-                      chapterDetails.ChapterPageWidget as Widget));
+                  builder: (ctx) => chapterDetails.chapterPageWidget));
             }),
-        Divider(
+        const Divider(
           color: Colors.transparent,
           height: 21,
         )

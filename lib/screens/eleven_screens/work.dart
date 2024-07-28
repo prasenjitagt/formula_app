@@ -7,13 +7,13 @@ class Work extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        title: CustomAppBarTitle(titleText: "Units and Measurements"),
+        title: const CustomAppBarTitle(titleText: "Units and Measurements"),
         centerTitle: true,
       ),
       body: ListView(
-        children: [],
+        children: const [],
       ),
     );
   }

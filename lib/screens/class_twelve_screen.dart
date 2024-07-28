@@ -10,11 +10,11 @@ class ClassTwelveScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           appBarTitle,
-          style: TextStyle(fontFamily: "aBeeZee", fontSize: 25),
+          style: const TextStyle(fontFamily: "aBeeZee", fontSize: 25),
         ),
         centerTitle: true,
       ),
-      body: Center(child: TexText(r"$\frac{a}{\sqrt{b}}$")),
+      body: const Center(child: TexText(r"$\frac{a}{\sqrt{b}}$")),
     );
   }
 }

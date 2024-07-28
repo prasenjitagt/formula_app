@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 class ChapterNameModel {
   const ChapterNameModel({
-    required this.ChapterName,
-    required this.ChapterNumber,
-    required this.ChapterPageWidget,
-    required this.ChapterImageName,
+    required this.chapterName,
+    required this.chapterNumber,
+    required this.chapterPageWidget,
+    required this.chapterImageName,
   });
 
-  final String ChapterName;
-  final String ChapterImageName;
-  final int ChapterNumber;
-  final Widget ChapterPageWidget;
+  final String chapterName;
+  final String chapterImageName;
+  final int chapterNumber;
+  final Widget chapterPageWidget;
 }

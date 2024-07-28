@@ -10,8 +10,8 @@ class MyDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15),
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 15),
           child: Divider(
             height: 40,
             color: Colors.black,
@@ -19,14 +19,14 @@ class MyDivider extends StatelessWidget {
         ),
         Text(
           dividerText,
-          style: TextStyle(
+          style: const TextStyle(
             fontFamily: "lato",
             fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
           textAlign: TextAlign.center,
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
       ],
     );
   }

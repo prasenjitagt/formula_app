@@ -52,21 +52,21 @@ class _PlaneState extends State<Plane> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        title: CustomAppBarTitle(titleText: "Motion in a Plane"),
+        title: const CustomAppBarTitle(titleText: "Motion in a Plane"),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Color.fromARGB(113, 255, 255, 255),
+        backgroundColor: const Color.fromRGBO(255, 255, 255, 0.443),
         onPressed: _showBackToTopButton ? _scrollToTop : _scrollToBottom,
         child: _showBackToTopButton
-            ? Icon(Icons.arrow_upward)
-            : Icon(Icons.arrow_downward),
+            ? const Icon(Icons.arrow_upward)
+            : const Icon(Icons.arrow_downward),
       ),
       body: ListView(
         controller: _myScrollController,
-        children: [
+        children: const [
           SizedBox(height: 10),
           Text(
             "VECTORS",

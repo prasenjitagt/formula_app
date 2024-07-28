@@ -12,7 +12,7 @@ class CustomAppBarTitle extends StatelessWidget {
       children: [
         Text(
           titleText,
-          style: TextStyle(fontFamily: 'aBeeZee', fontSize: 18),
+          style: const TextStyle(fontFamily: 'aBeeZee', fontSize: 18),
         ),
         Text(
           "(Double Tap to Zoom Images)",

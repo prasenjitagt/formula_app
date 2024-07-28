@@ -9,13 +9,13 @@ class StraightLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        title: CustomAppBarTitle(titleText: "Motion in a Straight Line"),
+        title: const CustomAppBarTitle(titleText: "Motion in a Straight Line"),
         centerTitle: true,
       ),
       body: ListView(
-        children: [
+        children: const [
           DoubleTapWidget(imageHeight: 100, imageName: "line1.jpg"),
           SizedBox(height: 10),
           DoubleTapWidget(imageHeight: 140, imageName: "line2.png"),

@@ -8,7 +8,7 @@ class UnitTextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return TexText(
       equationText,
-      style: TextStyle(
+      style: const TextStyle(
         fontSize: 15,
       ),
     );

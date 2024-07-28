@@ -11,12 +11,12 @@ class ClassElevenScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           appBarTitle,
-          style: TextStyle(fontFamily: 'aBeeZee', fontSize: 25),
+          style: const TextStyle(fontFamily: 'aBeeZee', fontSize: 25),
         ),
         centerTitle: true,
       ),
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
 
         // children: [for (final Chapter in elevenChapterDetails) Text("data")],
         children: elevenChapterDetails.map((eachChapter) {

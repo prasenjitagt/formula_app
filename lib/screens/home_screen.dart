@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
+        title: const Center(
           child: Text(
             "Physics Formulas",
             style: TextStyle(fontFamily: "aBeeZee", fontSize: 25),
@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: ListView(
-          children: [
+          children: const [
             SizedBox(height: 10),
             ListTileWidget(
               titleText: "Class XI",

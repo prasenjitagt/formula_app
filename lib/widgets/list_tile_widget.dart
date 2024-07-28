@@ -21,7 +21,7 @@ class ListTileWidget extends StatelessWidget {
         ),
         title: Text(
           titleText,
-          style: TextStyle(
+          style: const TextStyle(
             fontFamily: "lato",
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -29,12 +29,12 @@ class ListTileWidget extends StatelessWidget {
         ),
         subtitle: Text(
           subTitleText,
-          style: TextStyle(
+          style: const TextStyle(
             fontFamily: "lato",
             fontWeight: FontWeight.normal,
           ),
         ),
-        tileColor: Color.fromARGB(164, 160, 246, 252),
+        tileColor: const Color.fromARGB(164, 160, 246, 252),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         onTap: () {
           Navigator.of(context).push(

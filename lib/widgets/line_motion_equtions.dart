@@ -16,7 +16,7 @@ class _LineMotionEqutionsState extends State<LineMotionEqutions> {
 
   void _handleDoubleTap() {
     final position = tapDownDetails!.localPosition;
-    final double scale = 1.5;
+    const double scale = 1.5;
     final x = -position.dx * (scale - 1);
     final y = -position.dy * (scale - 1);
     final zoomed = Matrix4.identity()
@@ -46,13 +46,13 @@ class _LineMotionEqutionsState extends State<LineMotionEqutions> {
       onDoubleTapDown: (details) => tapDownDetails = details,
       onDoubleTap: _handleDoubleTap,
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 15),
-        padding: EdgeInsets.all(4),
+        margin: const EdgeInsets.symmetric(horizontal: 15),
+        padding: const EdgeInsets.all(4),
         decoration: BoxDecoration(border: Border.all(width: 1)),
         child: InteractiveViewer(
           transformationController: imageTransformationController,
           maxScale: 2,
-          child: Column(
+          child: const Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

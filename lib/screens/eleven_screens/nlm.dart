@@ -52,20 +52,20 @@ class _NLMState extends State<NLM> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        title: CustomAppBarTitle(titleText: "Laws of Motion"),
+        title: const CustomAppBarTitle(titleText: "Laws of Motion"),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(
-          backgroundColor: Color.fromARGB(113, 255, 255, 255),
+          backgroundColor: const Color.fromARGB(113, 255, 255, 255),
           onPressed: _showBackToTopButton ? _scrollToTop : _scrollToBottom,
           child: _showBackToTopButton
-              ? Icon(Icons.arrow_upward)
-              : Icon(Icons.arrow_downward)),
+              ? const Icon(Icons.arrow_upward)
+              : const Icon(Icons.arrow_downward)),
       body: ListView(
         controller: _myScrollController,
-        children: [
+        children: const [
           SizedBox(height: 10),
           Text(
             "LAWS OF MOTION",
