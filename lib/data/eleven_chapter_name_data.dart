@@ -51,7 +51,8 @@ const elevenChapterDetails = [
     chapterName: "Rotational Motion",
     chapterNumber: 6,
     chapterImageName: "11ch6.png",
-    chapterPageWidget: Rotational(appBarTitleText: "Rotational Motion"),
+    // chapterPageWidget: Rotational(appBarTitleText: "Rotational Motion"),
+    chapterPageWidget: Rotational(),
   ),
   // ChapterNameModel(
   //   chapterName: "Gravitation",

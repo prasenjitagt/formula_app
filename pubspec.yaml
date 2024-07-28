@@ -39,6 +39,7 @@ dependencies:
   tex_text: ^0.1.9
   firebase_storage: ^11.6.0
   firebase_core: ^2.24.2
+  transparent_image: ^2.0.1
 
 dev_dependencies:
   flutter_test:
