@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/widgets/custom_app_bar_title.dart';
-import 'package:formula_app/widgets/double_tap_to_zoom_widget.dart';
+import 'package:formula_app/widgets/double_tap_to_zoom_network_widget.dart';
 import 'package:formula_app/widgets/unit_dimesional_formula.dart';
 
 class Units extends StatelessWidget {
@@ -19,11 +19,14 @@ class Units extends StatelessWidget {
         children: const [
           UnitsDimensionalFormula(),
           SizedBox(height: 10),
-          DoubleTapToZoomWidget(imageHeight: 145, imageName: "unit1.png"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 145, imageName: "unit1.png"),
           SizedBox(height: 10),
-          DoubleTapToZoomWidget(imageHeight: 105, imageName: "unit2.png"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 105, imageName: "unit2.png"),
           SizedBox(height: 10),
-          DoubleTapToZoomWidget(imageHeight: 240, imageName: "unit3.png"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 240, imageName: "unit3.png"),
           SizedBox(height: 10),
         ],
       ),

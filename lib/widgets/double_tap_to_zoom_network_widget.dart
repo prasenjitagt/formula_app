@@ -8,10 +8,11 @@ class DoubleTapToZoomNetworkWidget extends StatefulWidget {
   final String imageName;
   @override
   State<DoubleTapToZoomNetworkWidget> createState() =>
-      _DoubleTapToZoomWidgetState();
+      _DoubleTapToZoomNetworkWidgetState();
 }
 
-class _DoubleTapToZoomWidgetState extends State<DoubleTapToZoomNetworkWidget> {
+class _DoubleTapToZoomNetworkWidgetState
+    extends State<DoubleTapToZoomNetworkWidget> {
   late TransformationController imageTransformationController;
   TapDownDetails? tapDownDetails;
   Future<String> getImageURL(String imageName) async {

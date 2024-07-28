@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:formula_app/widgets/custom_app_bar_title.dart';
 import 'package:formula_app/widgets/gap.dart';
 import 'package:formula_app/widgets/my_divider.dart';
-import 'package:formula_app/widgets/double_tap_to_zoom_widget.dart';
+import 'package:formula_app/widgets/double_tap_to_zoom_network_widget.dart';
 
 class Work extends StatefulWidget {
   const Work({super.key, required this.appBarTitleText});
@@ -76,101 +76,145 @@ class _WorkState extends State<Work> {
             textAlign: TextAlign.center,
           ),
           Gap(20),
-          DoubleTapToZoomWidget(imageHeight: 260, imageName: "work1.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 260, imageName: "work1.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 200, imageName: "work2.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 200, imageName: "work2.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 150, imageName: "work3.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 150, imageName: "work3.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 250, imageName: "work4.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 250, imageName: "work4.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 300, imageName: "work5.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 300, imageName: "work5.jpg"),
           Gap(10),
           MyDivider(dividerText: "WORK DONE BY DIFFERENT FORCES"),
-          DoubleTapToZoomWidget(imageHeight: 350, imageName: "work6.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 350, imageName: "work6.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 350, imageName: "work7.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 350, imageName: "work7.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 400, imageName: "work10.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 400, imageName: "work10.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 300, imageName: "work8.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 300, imageName: "work8.jpg"),
           Gap(10),
           MyDivider(dividerText: "WORK DONE BY MULTIPLE FORCES"),
-          DoubleTapToZoomWidget(imageHeight: 400, imageName: "work9.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 400, imageName: "work9.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 400, imageName: "work11.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 400, imageName: "work11.jpg"),
           Gap(10),
           MyDivider(dividerText: "ENERGY"),
-          DoubleTapToZoomWidget(imageHeight: 400, imageName: "work12.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 400, imageName: "work12.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 400, imageName: "work13.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 400, imageName: "work13.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 400, imageName: "work14.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 400, imageName: "work14.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 200, imageName: "work15.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 200, imageName: "work15.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 300, imageName: "work16.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 300, imageName: "work16.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 350, imageName: "work17.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 350, imageName: "work17.jpg"),
           Gap(10),
           MyDivider(dividerText: "EQUILIBIRUM"),
-          DoubleTapToZoomWidget(imageHeight: 80, imageName: "work18.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 80, imageName: "work18.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 500, imageName: "work19.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 500, imageName: "work19.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 500, imageName: "work20.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 500, imageName: "work20.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 500, imageName: "work21.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 500, imageName: "work21.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 170, imageName: "work22.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 170, imageName: "work22.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 350, imageName: "work23.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 350, imageName: "work23.jpg"),
           Gap(10),
           MyDivider(dividerText: "POWER"),
-          DoubleTapToZoomWidget(imageHeight: 200, imageName: "work24.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 200, imageName: "work24.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 250, imageName: "work25.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 250, imageName: "work25.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 300, imageName: "work26.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 300, imageName: "work26.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 300, imageName: "work27.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 300, imageName: "work27.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 200, imageName: "work28.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 200, imageName: "work28.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 200, imageName: "work29.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 200, imageName: "work29.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 380, imageName: "work30.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 380, imageName: "work30.jpg"),
           Gap(10),
           MyDivider(dividerText: "COLLISION"),
-          DoubleTapToZoomWidget(imageHeight: 70, imageName: "work31.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 70, imageName: "work31.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 250, imageName: "work32.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 250, imageName: "work32.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 200, imageName: "work33.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 200, imageName: "work33.jpg"),
           Gap(10),
           MyDivider(dividerText: "  TYPES OF COLLISION"),
-          DoubleTapToZoomWidget(imageHeight: 200, imageName: "work34.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 200, imageName: "work34.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 130, imageName: "work35.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 130, imageName: "work35.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 300, imageName: "work36.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 300, imageName: "work36.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 300, imageName: "work36.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 300, imageName: "work36.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 250, imageName: "work37.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 250, imageName: "work37.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 160, imageName: "work38.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 160, imageName: "work38.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 300, imageName: "work39.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 300, imageName: "work39.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 300, imageName: "work40.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 300, imageName: "work40.jpg"),
           Gap(10),
           MyDivider(dividerText: "INELASTIC COLLISION"),
-          DoubleTapToZoomWidget(imageHeight: 250, imageName: "work41.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 250, imageName: "work41.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 300, imageName: "work42.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 300, imageName: "work42.jpg"),
           Gap(10),
-          DoubleTapToZoomWidget(imageHeight: 200, imageName: "work43.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 200, imageName: "work43.jpg"),
           Gap(10),
         ],
       ),

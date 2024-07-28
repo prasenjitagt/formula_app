@@ -5,9 +5,8 @@ import 'package:formula_app/widgets/double_tap_to_zoom_network_widget.dart';
 import 'package:formula_app/widgets/my_divider.dart';
 
 class Rotational extends StatefulWidget {
-  // const Rotational({super.key, required this.appBarTitleText});
-  // final String appBarTitleText;
-  const Rotational({super.key});
+  const Rotational({super.key, required this.appBarTitleText});
+  final String appBarTitleText;
   @override
   State<Rotational> createState() => _RotationalState();
 }
@@ -55,8 +54,7 @@ class _RotationalState extends State<Rotational> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        // title: CustomAppBarTitle(titleText: widget.appBarTitleText),
-        title: const CustomAppBarTitle(titleText: "Rotational Motion"),
+        title: CustomAppBarTitle(titleText: widget.appBarTitleText),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(

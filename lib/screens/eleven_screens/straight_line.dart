@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/widgets/custom_app_bar_title.dart';
 import 'package:formula_app/widgets/line_motion_equtions.dart';
-import 'package:formula_app/widgets/double_tap_to_zoom_widget.dart';
+import 'package:formula_app/widgets/double_tap_to_zoom_network_widget.dart';
 
 class StraightLine extends StatelessWidget {
   const StraightLine({super.key, required this.appBarTitleText});
@@ -17,17 +17,22 @@ class StraightLine extends StatelessWidget {
       ),
       body: ListView(
         children: const [
-          DoubleTapToZoomWidget(imageHeight: 100, imageName: "line1.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 100, imageName: "line1.jpg"),
           SizedBox(height: 10),
-          DoubleTapToZoomWidget(imageHeight: 140, imageName: "line2.png"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 140, imageName: "line2.png"),
           SizedBox(height: 10),
           LineMotionEqutions(),
           SizedBox(height: 10),
-          DoubleTapToZoomWidget(imageHeight: 210, imageName: "line4.png"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 210, imageName: "line4.png"),
           SizedBox(height: 10),
-          DoubleTapToZoomWidget(imageHeight: 250, imageName: "line3.png"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 250, imageName: "line3.png"),
           SizedBox(height: 10),
-          DoubleTapToZoomWidget(imageHeight: 180, imageName: "line5.jpg"),
+          DoubleTapToZoomNetworkWidget(
+              imageHeight: 180, imageName: "line5.jpg"),
           SizedBox(height: 10),
         ],
       ),
