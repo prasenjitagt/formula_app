@@ -1,4 +1,4 @@
-package com.example.formula_app
+package com.velocity.formulaapp
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "497068440646",
+    "project_id": "physics-formulas-app",
+    "storage_bucket": "physics-formulas-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497068440646:android:d80f910da3ca42ef3c1e47",
+        "android_client_info": {
+          "package_name": "com.example.formula_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo8KGSxb0jz0EOSjktqbr16G-TrsVI2hA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497068440646:android:d6c4dd1532b95a613c1e47",
+        "android_client_info": {
+          "package_name": "com.physics.formulasapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo8KGSxb0jz0EOSjktqbr16G-TrsVI2hA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497068440646:android:bbee13bb40b5dacd3c1e47",
+        "android_client_info": {
+          "package_name": "com.velocity.formulaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo8KGSxb0jz0EOSjktqbr16G-TrsVI2hA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
