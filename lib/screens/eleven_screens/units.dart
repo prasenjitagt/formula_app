@@ -15,20 +15,22 @@ class Units extends StatelessWidget {
         title: CustomAppBarTitle(titleText: appBarTitleText),
         centerTitle: true,
       ),
-      body: ListView(
-        children: const [
-          UnitsDimensionalFormula(),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 145, imageName: "unit1.png"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 105, imageName: "unit2.png"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 240, imageName: "unit3.png"),
-          SizedBox(height: 10),
-        ],
+      body: const SingleChildScrollView(
+        child: Column(
+          children: [
+            UnitsDimensionalFormula(),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 145, imageName: "unit1.png"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 105, imageName: "unit2.png"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 240, imageName: "unit3.png"),
+            SizedBox(height: 10),
+          ],
+        ),
       ),
     );
   }

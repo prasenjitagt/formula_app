@@ -15,26 +15,28 @@ class StraightLine extends StatelessWidget {
         title: CustomAppBarTitle(titleText: appBarTitleText),
         centerTitle: true,
       ),
-      body: ListView(
-        children: const [
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 100, imageName: "line1.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 140, imageName: "line2.png"),
-          SizedBox(height: 10),
-          LineMotionEqutions(),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 210, imageName: "line4.png"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 250, imageName: "line3.png"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 180, imageName: "line5.jpg"),
-          SizedBox(height: 10),
-        ],
+      body: const SingleChildScrollView(
+        child: Column(
+          children: [
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 100, imageName: "line1.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 140, imageName: "line2.png"),
+            SizedBox(height: 10),
+            LineMotionEqutions(),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 210, imageName: "line4.png"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 250, imageName: "line3.png"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 180, imageName: "line5.jpg"),
+            SizedBox(height: 10),
+          ],
+        ),
       ),
     );
   }

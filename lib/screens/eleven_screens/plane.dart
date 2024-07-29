@@ -65,105 +65,107 @@ class _PlaneState extends State<Plane> {
             ? const Icon(Icons.arrow_upward)
             : const Icon(Icons.arrow_downward),
       ),
-      body: ListView(
+      body: SingleChildScrollView(
         controller: _myScrollController,
-        children: const [
-          SizedBox(height: 10),
-          Text(
-            "VECTORS",
-            style: TextStyle(
-              fontFamily: "lato",
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
+        child: const Column(
+          children: [
+            SizedBox(height: 10),
+            Text(
+              "VECTORS",
+              style: TextStyle(
+                fontFamily: "lato",
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
             ),
-            textAlign: TextAlign.center,
-          ),
-          SizedBox(height: 20),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 260, imageName: "plane1.png"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 320, imageName: "plane2.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 280, imageName: "plane3.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 300, imageName: "plane4.png"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 300, imageName: "plane5.jpg"),
-          MyDivider(dividerText: "PROJECTILE MOTION"),
-          SizedBox(height: 20),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 400, imageName: "plane6.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 260, imageName: "plane7.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 400, imageName: "plane8.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 400, imageName: "plane9.jpg"),
-          SizedBox(height: 10),
-          MyDivider(dividerText: "RELATIVE MOTION"),
-          SizedBox(height: 20),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 200, imageName: "plane10.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 200, imageName: "plane11.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 200, imageName: "plane12.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 300, imageName: "plane13.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 260, imageName: "plane14.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 230, imageName: "plane15.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 300, imageName: "plane16.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 300, imageName: "plane17.jpg"),
-          SizedBox(height: 10),
-          MyDivider(dividerText: "MAN RAIN PROBLEM"),
-          SizedBox(height: 20),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 300, imageName: "plane18.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 350, imageName: "plane19.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 1100, imageName: "plane20.jpg"),
-          SizedBox(height: 10),
-          MyDivider(dividerText: "CIRCULAR MOTION"),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 350, imageName: "plane21.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 550, imageName: "plane22.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 700, imageName: "plane23.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 700, imageName: "plane24.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 530, imageName: "plane25.jpg"),
-          SizedBox(height: 10),
-          DoubleTapToZoomNetworkWidget(
-              imageHeight: 400, imageName: "plane26.jpg"),
-          SizedBox(height: 10),
-        ],
+            SizedBox(height: 20),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 260, imageName: "plane1.png"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 320, imageName: "plane2.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 280, imageName: "plane3.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "plane4.png"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "plane5.jpg"),
+            MyDivider(dividerText: "PROJECTILE MOTION"),
+            SizedBox(height: 20),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 400, imageName: "plane6.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 260, imageName: "plane7.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 400, imageName: "plane8.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 400, imageName: "plane9.jpg"),
+            SizedBox(height: 10),
+            MyDivider(dividerText: "RELATIVE MOTION"),
+            SizedBox(height: 20),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 200, imageName: "plane10.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 200, imageName: "plane11.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 200, imageName: "plane12.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "plane13.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 260, imageName: "plane14.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 230, imageName: "plane15.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "plane16.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "plane17.jpg"),
+            SizedBox(height: 10),
+            MyDivider(dividerText: "MAN RAIN PROBLEM"),
+            SizedBox(height: 20),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "plane18.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "plane19.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 1100, imageName: "plane20.jpg"),
+            SizedBox(height: 10),
+            MyDivider(dividerText: "CIRCULAR MOTION"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "plane21.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 550, imageName: "plane22.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 700, imageName: "plane23.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 700, imageName: "plane24.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 530, imageName: "plane25.jpg"),
+            SizedBox(height: 10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 400, imageName: "plane26.jpg"),
+            SizedBox(height: 10),
+          ],
+        ),
       ),
     );
   }

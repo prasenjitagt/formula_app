@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 
@@ -63,18 +64,19 @@ class _DoubleTapToZoomNetworkWidgetState
             maxScale: 5.0,
             child: SizedBox(
               height: widget.imageHeight,
+              width: double.infinity,
               child: FutureBuilder<String>(
                 future: _imageURL,
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
-                    return Image.network(
-                      snapshot.data!,
+                    // return Image.network(
+                    //   snapshot.data!,
+                    //   height: widget.imageHeight,
+                    // );
+                    return CachedNetworkImage(
+                      imageUrl: snapshot.data!,
                       height: widget.imageHeight,
                     );
-//  return CachedNetworkImage(
-//                       imageUrl: snapshot.data!,
-//                       height: widget.imageHeight,
-//                     );
 
                     // return FadeInImage(
                     //   placeholder: MemoryImage(kTransparentImage),
