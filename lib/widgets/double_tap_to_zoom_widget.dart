@@ -50,9 +50,13 @@ class _DoubleTapToZoomWidgetState extends State<DoubleTapToZoomWidget> {
         child: InteractiveViewer(
           transformationController: imageTransformationController,
           maxScale: 5.0,
-          child: Image.asset(
-            "assets/images/${widget.imageName}",
+          child: SizedBox(
             height: widget.imageHeight,
+            width: double.infinity,
+            child: Image.asset(
+              "assets/images/${widget.imageName}",
+              height: widget.imageHeight,
+            ),
           ),
         ),
       ),
