@@ -71,7 +71,7 @@ class _DoubleTapToZoomNetworkWidgetState
                       snapshot.data!,
                       height: widget.imageHeight,
                     );
-//  return CachedNetworkImage
+//  return CachedNetworkImage(
 //                       imageUrl: snapshot.data!,
 //                       height: widget.imageHeight,
 //                     );
