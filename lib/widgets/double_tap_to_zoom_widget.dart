@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 
-class DoubleTapToZoomNetworkWidget extends StatefulWidget {
-  const DoubleTapToZoomNetworkWidget(
+class DoubleTapToZoomWidget extends StatefulWidget {
+  const DoubleTapToZoomWidget(
       {super.key, required this.imageHeight, required this.imageName});
   final double imageHeight;
   final String imageName;
   @override
-  State<DoubleTapToZoomNetworkWidget> createState() =>
-      _DoubleTapToZoomNetworkWidgetState();
+  State<DoubleTapToZoomWidget> createState() => _DoubleTapToZoomWidgetState();
 }
 
-class _DoubleTapToZoomNetworkWidgetState
-    extends State<DoubleTapToZoomNetworkWidget> {
+class _DoubleTapToZoomWidgetState extends State<DoubleTapToZoomWidget> {
   late TransformationController imageTransformationController;
   TapDownDetails? tapDownDetails;
 

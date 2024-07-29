@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 class CustomAppBarTitle extends StatelessWidget {
   const CustomAppBarTitle({
@@ -20,7 +21,10 @@ class CustomAppBarTitle extends StatelessWidget {
               fontFamily: 'aBeeZee',
               fontSize: 12,
               color: Colors.redAccent.shade700),
-        )
+        ).animate().shakeX(
+              duration: 1000.ms,
+              hz: 2,
+            )
       ],
     );
   }

@@ -1,7 +1,9 @@
 import 'package:formula_app/models/chapter_name_model.dart';
+import 'package:formula_app/screens/eleven_screens/gravitation.dart';
 import 'package:formula_app/screens/eleven_screens/nlm.dart';
 import 'package:formula_app/screens/eleven_screens/plane.dart';
 import 'package:formula_app/screens/eleven_screens/rotational.dart';
+import 'package:formula_app/screens/eleven_screens/solids.dart';
 import 'package:formula_app/screens/eleven_screens/straight_line.dart';
 import 'package:formula_app/screens/eleven_screens/units.dart';
 import 'package:formula_app/screens/eleven_screens/work.dart';
@@ -53,18 +55,19 @@ const elevenChapterDetails = [
     chapterImageName: "11ch6.png",
     chapterPageWidget: Rotational(appBarTitleText: "Rotational Motion"),
   ),
-  // ChapterNameModel(
-  //   chapterName: "Gravitation",
-  //   chapterNumber: 7,
-  //   chapterImageName: "11ch7.png",
-  //   chapterPageWidget: null,
-  // ),
-  // ChapterNameModel(
-  //   chapterName: "Mechanical Properties of Solids",
-  //   chapterNumber: 8,
-  //   chapterImageName: "11ch8.png",
-  //   chapterPageWidget: null,
-  // ),
+  ChapterNameModel(
+    chapterName: "Gravitation",
+    chapterNumber: 7,
+    chapterImageName: "11ch7.png",
+    chapterPageWidget: Gravitation(appBarTitleText: "Gravitation"),
+  ),
+  ChapterNameModel(
+    chapterName: "Mechanical Properties of Solids",
+    chapterNumber: 8,
+    chapterImageName: "11ch8.png",
+    chapterPageWidget:
+        Solids(appBarTitleText: "Mechanical Properties of Solids"),
+  ),
   // ChapterNameModel(
   //   chapterName: "Mechanical Properties of Fluids",
   //   chapterNumber: 9,

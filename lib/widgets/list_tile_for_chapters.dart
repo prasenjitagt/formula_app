@@ -11,14 +11,12 @@ class ListTileForChapters extends StatelessWidget {
     return Column(
       children: [
         ListTile(
-            leading: CircleAvatar(
-              backgroundColor: Colors.white,
-              child: Padding(
-                padding: const EdgeInsets.all(7.0),
-                child: Image.asset(
-                  'assets/images/${chapterDetails.chapterImageName}',
-                  width: 35,
-                ),
+            leading: ClipOval(
+              child: Image.asset(
+                'assets/images/${chapterDetails.chapterImageName}',
+                width: 50,
+                height: 50,
+                fit: BoxFit.cover,
               ),
             ),
             title: Padding(

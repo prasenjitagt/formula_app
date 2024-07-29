@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:formula_app/models/scroll_to_bottom.dart';
 import 'package:formula_app/widgets/custom_app_bar_title.dart';
 import 'package:formula_app/widgets/gap.dart';
 import 'package:formula_app/widgets/my_divider.dart';
@@ -46,9 +47,7 @@ class _WorkState extends State<Work> {
   }
 
   void _scrollToBottom() {
-    // var scrollValue = _myScrollController.position.maxScrollExtent;
-    _myScrollController.animateTo(20000,
-        duration: const Duration(milliseconds: 1500), curve: Curves.easeInOut);
+    ScrollToBottom().scrollToBottom(_myScrollController);
   }
 
   @override

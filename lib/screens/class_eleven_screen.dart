@@ -17,8 +17,6 @@ class ClassElevenScreen extends StatelessWidget {
       ),
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 20),
-
-        // children: [for (final Chapter in elevenChapterDetails) Text("data")],
         children: elevenChapterDetails.map((eachChapter) {
           return ListTileForChapters(chapterDetails: eachChapter);
         }).toList(),
