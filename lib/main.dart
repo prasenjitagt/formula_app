@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:formula_app/dependency_injector.dart';
 import 'package:formula_app/screens/home_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:get/get.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -9,6 +11,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   runApp(const MyApp());
+  DependencyInjector.inject();
 }
 
 class MyApp extends StatelessWidget {
@@ -16,7 +19,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return const GetMaterialApp(
         // title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
         home: HomeScreen());

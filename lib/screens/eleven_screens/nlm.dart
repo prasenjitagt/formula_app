@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:formula_app/widgets/custom_app_bar_title.dart';
 import 'package:formula_app/widgets/my_divider.dart';
 import 'package:formula_app/widgets/double_tap_to_zoom_network_widget.dart';
-import 'package:formula_app/widgets/double_tap_to_zoom_network_widget.dart';
+import 'package:formula_app/widgets/double_tap_to_zoom_widget.dart';
 import 'package:formula_app/models/scroll_to_bottom.dart';
 
 class NLM extends StatefulWidget {
