@@ -1,11 +1,17 @@
 import 'package:formula_app/models/chapter_name_model.dart';
+import 'package:formula_app/screens/eleven_screens/fluids.dart';
 import 'package:formula_app/screens/eleven_screens/gravitation.dart';
+import 'package:formula_app/screens/eleven_screens/ktg.dart';
 import 'package:formula_app/screens/eleven_screens/nlm.dart';
+import 'package:formula_app/screens/eleven_screens/oscillations.dart';
 import 'package:formula_app/screens/eleven_screens/plane.dart';
 import 'package:formula_app/screens/eleven_screens/rotational.dart';
 import 'package:formula_app/screens/eleven_screens/solids.dart';
 import 'package:formula_app/screens/eleven_screens/straight_line.dart';
+import 'package:formula_app/screens/eleven_screens/thermal_properties.dart';
+import 'package:formula_app/screens/eleven_screens/thermodynamics.dart';
 import 'package:formula_app/screens/eleven_screens/units.dart';
+import 'package:formula_app/screens/eleven_screens/waves.dart';
 import 'package:formula_app/screens/eleven_screens/work.dart';
 
 const elevenChapterDetails = [
@@ -68,40 +74,44 @@ const elevenChapterDetails = [
     chapterPageWidget:
         Solids(appBarTitleText: "Mechanical Properties of Solids"),
   ),
-  // ChapterNameModel(
-  //   chapterName: "Mechanical Properties of Fluids",
-  //   chapterNumber: 9,
-  //   chapterImageName: "11ch9.png",
-  //   chapterPageWidget: null,
-  // ),
-  // ChapterNameModel(
-  //   chapterName: "Thermal Properties of Matter",
-  //   chapterNumber: 10,
-  //   chapterImageName: "11ch10.png",
-  //   chapterPageWidget: null,
-  // ),
-  // ChapterNameModel(
-  //   chapterName: "Thermodynamics",
-  //   chapterNumber: 11,
-  //   chapterImageName: "11ch11.png",
-  //   chapterPageWidget: null,
-  // ),
-  // ChapterNameModel(
-  //   chapterName: "KTG",
-  //   chapterNumber: 12,
-  //   chapterImageName: "11ch12.png",
-  //   chapterPageWidget: null,
-  // ),
-  // ChapterNameModel(
-  //   chapterName: "Oscillations",
-  //   chapterNumber: 13,
-  //   chapterImageName: "11ch13.png",
-  //   chapterPageWidget: null,
-  // ),
-  // ChapterNameModel(
-  //   chapterName: "Waves",
-  //   chapterNumber: 14,
-  //   chapterImageName: "11ch14.png",
-  //   chapterPageWidget: null,
-  // ),
+  ChapterNameModel(
+    chapterName: "Mechanical Properties of Fluids",
+    chapterNumber: 9,
+    chapterImageName: "11ch9.png",
+    chapterPageWidget:
+        Fluids(appBarTitleText: "Mechanical Properties of Fluids"),
+  ),
+  ChapterNameModel(
+    chapterName: "Thermal Properties of Matter",
+    chapterNumber: 10,
+    chapterImageName: "11ch10.png",
+    chapterPageWidget:
+        ThermalProperties(appBarTitleText: "Thermal Properties of Matter"),
+  ),
+  ChapterNameModel(
+    chapterName: "Thermodynamics",
+    chapterNumber: 11,
+    chapterImageName: "11ch11.png",
+    chapterPageWidget: Thermodynamics(appBarTitleText: "Thermodynamics"),
+  ),
+  ChapterNameModel(
+    chapterName: "KTG",
+    chapterNumber: 12,
+    chapterImageName: "11ch12.png",
+    chapterPageWidget: KTG(
+      appBarTitleText: "KTG",
+    ),
+  ),
+  ChapterNameModel(
+    chapterName: "Oscillations",
+    chapterNumber: 13,
+    chapterImageName: "11ch13.png",
+    chapterPageWidget: Oscillations(appBarTitleText: "Oscillations"),
+  ),
+  ChapterNameModel(
+    chapterName: "Waves",
+    chapterNumber: 14,
+    chapterImageName: "11ch14.png",
+    chapterPageWidget: Waves(appBarTitleText: "Waves"),
+  ),
 ];
