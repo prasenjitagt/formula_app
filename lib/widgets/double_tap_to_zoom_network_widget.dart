@@ -15,6 +15,8 @@ class _DoubleTapToZoomNetworkWidgetState
     extends State<DoubleTapToZoomNetworkWidget> {
   late TransformationController imageTransformationController;
   TapDownDetails? tapDownDetails;
+
+  late Future<String> _imageURL;
   Future<String> getImageURL(String imageName) async {
     final storageRef = FirebaseStorage.instance.ref().child(imageName);
     String downloadURL = await storageRef.getDownloadURL();
@@ -38,6 +40,7 @@ class _DoubleTapToZoomNetworkWidgetState
   @override
   void initState() {
     super.initState();
+    _imageURL = getImageURL(widget.imageName);
     imageTransformationController = TransformationController();
   }
 
@@ -61,13 +64,17 @@ class _DoubleTapToZoomNetworkWidgetState
             child: SizedBox(
               height: widget.imageHeight,
               child: FutureBuilder<String>(
-                future: getImageURL(widget.imageName),
+                future: _imageURL,
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
                     return Image.network(
                       snapshot.data!,
                       height: widget.imageHeight,
                     );
+//  return CachedNetworkImage(
+//                       imageUrl: snapshot.data!,
+//                       height: widget.imageHeight,
+//                     );
 
                     // return FadeInImage(
                     //   placeholder: MemoryImage(kTransparentImage),
