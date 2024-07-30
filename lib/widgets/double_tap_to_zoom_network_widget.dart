@@ -98,7 +98,7 @@ class _DoubleTapToZoomNetworkWidgetState
                           ),
                           Expanded(
                             child: Image.asset(
-                              "assets/images/notFount.gif",
+                              "assets/images/image-not-found.gif",
                               fit: BoxFit.contain,
                             ),
                           ),

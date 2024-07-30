@@ -20,7 +20,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const GetMaterialApp(
-        // title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
         home: HomeScreen());
   }

@@ -67,16 +67,11 @@ class _ThermodynamicsState extends State<Thermodynamics> {
         controller: _myScrollController,
         child: const Column(
           children: [
+            DoubleTapToZoomWidget(imageHeight: 220, imageName: "thermo1.jpg"),
             Gap(10),
-            Text(
-              "COMING SOON",
-              style: TextStyle(
-                  fontFamily: "lato",
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center,
-            ),
-            DoubleTapToZoomWidget(imageHeight: 220, imageName: "rot1.jpg"),
+            DoubleTapToZoomWidget(imageHeight: 250, imageName: "thermo2.jpg"),
+            Gap(10),
+            MyDivider(dividerText: "THERMODYNAMIC PROCESSES")
           ],
         ),
       ),

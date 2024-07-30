@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/models/scroll_to_bottom.dart';
 import 'package:formula_app/widgets/custom_app_bar_title.dart';
-import 'package:formula_app/widgets/double_tap_to_zoom_widget.dart';
 import 'package:formula_app/widgets/gap.dart';
 import 'package:formula_app/widgets/double_tap_to_zoom_network_widget.dart';
 import 'package:formula_app/widgets/my_divider.dart';
 import 'package:formula_app/widgets/solids_equations_part_one.dart';
+import 'package:formula_app/widgets/solids_equations_part_three.dart';
 import 'package:formula_app/widgets/solids_equations_part_two.dart';
 
 class Solids extends StatefulWidget {
@@ -71,17 +71,59 @@ class _SolidsState extends State<Solids> {
           children: [
             SolidsEquationsPartOne(),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 330, imageName: "solid1.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 330, imageName: "solid1.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 250, imageName: "solid2.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 250, imageName: "solid2.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 400, imageName: "solid3.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 400, imageName: "solid3.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 420, imageName: "solid4.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 420, imageName: "solid4.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 420, imageName: "solid5.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 420, imageName: "solid5.jpg"),
             Gap(10),
             SolidsEquationsPartTwo(),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "solid6.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 250, imageName: "solid7.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 400, imageName: "solid15.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "solid8.jpg"),
+            Gap(10),
+            MyDivider(dividerText: "STRESS AND STRAIN CURVE"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "solid9.jpg"),
+            Gap(10),
+            SolidsEquationsPartThree(),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "solid10.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "solid11.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 430, imageName: "solid12.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 430, imageName: "solid13.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 430, imageName: "solid14.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 450, imageName: "solid16.jpg"),
             Gap(10),
           ],
         ),
