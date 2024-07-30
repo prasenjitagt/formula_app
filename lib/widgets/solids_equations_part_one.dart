@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:formula_app/widgets/gap.dart';
 import 'package:formula_app/widgets/unit_text_widget.dart';
 
-class LineMotionEqutions extends StatefulWidget {
-  const LineMotionEqutions({
+class SolidsEquationsPartOne extends StatefulWidget {
+  const SolidsEquationsPartOne({
     super.key,
   });
 
   @override
-  State<LineMotionEqutions> createState() => _LineMotionEqutionsState();
+  State<SolidsEquationsPartOne> createState() => _SolidsEquationsPartOneState();
 }
 
-class _LineMotionEqutionsState extends State<LineMotionEqutions> {
+class _SolidsEquationsPartOneState extends State<SolidsEquationsPartOne> {
   late TransformationController imageTransformationController;
   TapDownDetails? tapDownDetails;
 
@@ -59,52 +60,73 @@ class _LineMotionEqutionsState extends State<LineMotionEqutions> {
               Align(
                 alignment: Alignment.center,
                 child: Text(
-                  "EQUATIONS OF MOTION",
+                  "STRESS",
                   style: TextStyle(
                       fontFamily: "lato",
                       fontSize: 18,
                       fontWeight: FontWeight.bold),
                 ),
               ),
-              Align(
-                alignment: Alignment.center,
-                child: Text(
-                  "(VALID FOR CONSTANT ACCELARTION)",
-                  style: TextStyle(
-                      fontFamily: "lato",
-                      fontSize: 10,
-                      fontWeight: FontWeight.w900,
-                      color: Colors.red,
-                      fontStyle: FontStyle.italic),
+              Gap(10),
+              EquationTextWidget(
+                  equationText:
+                      r"$Stress = \frac{\text{Internal restoring force}}{\text{Area of cross section}}$"),
+              Gap(10),
+              Text(
+                "There are Three Types of Stress:",
+                style: TextStyle(
+                  fontFamily: "lato",
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 10),
-              EquationTextWidget(equationText: r"(1) $v = u + at$"),
-              EquationTextWidget(
-                  equationText: r"(2) $s = ut + \frac{1}{2}at^{2}$"),
-              EquationTextWidget(equationText: r"(3) $v^{2} = u^{2} + 2as$"),
-              EquationTextWidget(
-                  equationText: r"(4) $S_{n} = u + \frac{a}{2}(2n-1)$"),
+              Gap(10),
               Text(
-                "NOTE",
+                "(a) Longitudinal Stress (2 Types):",
                 style: TextStyle(
-                    fontSize: 20, decoration: TextDecoration.underline),
+                  fontFamily: "lato",
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: 20),
+                child: Text(
+                  "(i) Tensile Stress",
+                  style: TextStyle(
+                    fontFamily: "lato",
+                    fontSize: 17,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: 20),
+                child: Text(
+                  "(ii) Compressive Stress",
+                  style: TextStyle(
+                    fontFamily: "lato",
+                    fontSize: 17,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Gap(3),
+              Text(
+                "(b) Volume Stress",
+                style: TextStyle(
+                  fontFamily: "lato",
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               Text(
-                "(a) In rest condition u = 0",
-                style: TextStyle(fontSize: 18),
-              ),
-              Text(
-                "(b) If partical stops v = 0",
-                style: TextStyle(fontSize: 18),
-              ),
-              Text(
-                "(c) velocity increasing means acceleration is +ve",
-                style: TextStyle(fontSize: 18),
-              ),
-              Text(
-                "(d) velocity decreasing means acceleration is -ve",
-                style: TextStyle(fontSize: 18),
+                "(c) Tangential Stress or Shear Stress",
+                style: TextStyle(
+                  fontFamily: "lato",
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ],
           ),

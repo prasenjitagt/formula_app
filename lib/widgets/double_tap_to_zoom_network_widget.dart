@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:formula_app/widgets/gap.dart';
 
 class DoubleTapToZoomNetworkWidget extends StatefulWidget {
   const DoubleTapToZoomNetworkWidget(
@@ -84,7 +85,24 @@ class _DoubleTapToZoomNetworkWidgetState
                     //   height: widget.imageHeight,
                     // );
                   } else if (snapshot.hasError) {
-                    return Text('Error: ${snapshot.error}');
+                    return Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          const Text(
+                            "Error Fetching the Image",
+                            style: TextStyle(
+                                fontFamily: "lato",
+                                fontSize: 25,
+                                color: Colors.red),
+                          ),
+                          Expanded(
+                            child: Image.asset(
+                              "assets/images/notFount.gif",
+                              fit: BoxFit.contain,
+                            ),
+                          ),
+                        ]);
                   } else {
                     return const Center(child: CircularProgressIndicator());
                   }

@@ -5,6 +5,8 @@ import 'package:formula_app/widgets/double_tap_to_zoom_widget.dart';
 import 'package:formula_app/widgets/gap.dart';
 import 'package:formula_app/widgets/double_tap_to_zoom_network_widget.dart';
 import 'package:formula_app/widgets/my_divider.dart';
+import 'package:formula_app/widgets/solids_equations_part_one.dart';
+import 'package:formula_app/widgets/solids_equations_part_two.dart';
 
 class Solids extends StatefulWidget {
   const Solids({super.key, required this.appBarTitleText});
@@ -67,16 +69,20 @@ class _SolidsState extends State<Solids> {
         controller: _myScrollController,
         child: const Column(
           children: [
+            SolidsEquationsPartOne(),
             Gap(10),
-            Text(
-              "COMING SOON",
-              style: TextStyle(
-                  fontFamily: "lato",
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center,
-            ),
-            DoubleTapToZoomWidget(imageHeight: 220, imageName: "rot1.jpg"),
+            DoubleTapToZoomWidget(imageHeight: 330, imageName: "solid1.jpg"),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 250, imageName: "solid2.jpg"),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 400, imageName: "solid3.jpg"),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 420, imageName: "solid4.jpg"),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 420, imageName: "solid5.jpg"),
+            Gap(10),
+            SolidsEquationsPartTwo(),
+            Gap(10),
           ],
         ),
       ),

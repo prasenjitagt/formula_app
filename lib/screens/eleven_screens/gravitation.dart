@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/models/scroll_to_bottom.dart';
 import 'package:formula_app/widgets/custom_app_bar_title.dart';
-import 'package:formula_app/widgets/double_tap_to_zoom_widget.dart';
+import 'package:formula_app/widgets/double_tap_to_zoom_network_widget.dart';
 import 'package:formula_app/widgets/gap.dart';
 import 'package:formula_app/widgets/my_divider.dart';
 
@@ -76,112 +76,158 @@ class _GravitationState extends State<Gravitation> {
               textAlign: TextAlign.center,
             ),
             Gap(20),
-            DoubleTapToZoomWidget(imageHeight: 350, imageName: "grv1.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "grv1.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 300, imageName: "grv2.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "grv2.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 350, imageName: "grv3.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "grv3.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 200, imageName: "grv4.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 200, imageName: "grv4.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 280, imageName: "grv5.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 280, imageName: "grv5.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 280, imageName: "grv6.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 280, imageName: "grv6.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 250, imageName: "grv7.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 250, imageName: "grv7.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 230, imageName: "grv8.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 230, imageName: "grv8.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 180, imageName: "grv9.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 180, imageName: "grv9.jpg"),
             Gap(10),
             MyDivider(
                 dividerText:
                     "VARIATION IN THE VALUE OF\nACCELERATION DUE TO GRAVITY"),
-            DoubleTapToZoomWidget(imageHeight: 320, imageName: "grv10.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 320, imageName: "grv10.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 250, imageName: "grv11.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 250, imageName: "grv11.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 320, imageName: "grv12.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 320, imageName: "grv12.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 380, imageName: "grv13.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 380, imageName: "grv13.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 480, imageName: "grv14.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 480, imageName: "grv14.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 380, imageName: "grv15.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 380, imageName: "grv15.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 280, imageName: "grv16.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 280, imageName: "grv16.jpg"),
             Gap(10),
             MyDivider(dividerText: "GRAPH FOR K.E, P.E AND T.E"),
-            DoubleTapToZoomWidget(imageHeight: 250, imageName: "grv17.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 250, imageName: "grv17.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 450, imageName: "grv18.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 450, imageName: "grv18.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 450, imageName: "grv19.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 450, imageName: "grv19.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 300, imageName: "grv20.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "grv20.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 480, imageName: "grv21.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 480, imageName: "grv21.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 320, imageName: "grv22.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 320, imageName: "grv22.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 180, imageName: "grv23.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 180, imageName: "grv23.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 280, imageName: "grv24.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 280, imageName: "grv24.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 320, imageName: "grv25.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 320, imageName: "grv25.jpg"),
             Gap(10),
             MyDivider(dividerText: "KEPLER'S LAW OF PLANETARY MOTION"),
-            DoubleTapToZoomWidget(imageHeight: 350, imageName: "grv26.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "grv26.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 520, imageName: "grv27.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 520, imageName: "grv27.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 320, imageName: "grv28.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 320, imageName: "grv28.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 480, imageName: "grv29.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 480, imageName: "grv29.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 480, imageName: "grv30.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 480, imageName: "grv30.jpg"),
             Gap(10),
             MyDivider(
                 dividerText:
                     "GRAVITATIONAL FIELD INTENSITY\nDUE TO A SPHERICAL SHELL"),
-            DoubleTapToZoomWidget(imageHeight: 350, imageName: "grv31.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "grv31.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 300, imageName: "grv32.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "grv32.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 250, imageName: "grv33.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 250, imageName: "grv33.jpg"),
             Gap(10),
             MyDivider(
                 dividerText:
                     "GRAVITATIONAL FIELD INTENSITY\nDUE TO A SOLID SPHERE"),
-            DoubleTapToZoomWidget(imageHeight: 300, imageName: "grv34.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "grv34.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 250, imageName: "grv35.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 250, imageName: "grv35.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 200, imageName: "grv36.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 200, imageName: "grv36.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 200, imageName: "grv37.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 200, imageName: "grv37.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 200, imageName: "grv38.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 200, imageName: "grv38.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 420, imageName: "grv39.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 420, imageName: "grv39.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 300, imageName: "grv40.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "grv40.jpg"),
             Gap(10),
             MyDivider(
                 dividerText: "GRAVITATIONAL POTENTIAL\nDUE TO A SOLID SPHERE"),
-            DoubleTapToZoomWidget(imageHeight: 300, imageName: "grv41.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "grv41.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 300, imageName: "grv42.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "grv42.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 300, imageName: "grv43.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "grv43.jpg"),
             Gap(10),
             MyDivider(
                 dividerText: "GRAVITATIONAL POTENTIAL\nDUE TO A HOLLOW SPHERE"),
-            DoubleTapToZoomWidget(imageHeight: 300, imageName: "grv44.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "grv44.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 300, imageName: "grv45.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "grv45.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 300, imageName: "grv46.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "grv46.jpg"),
             Gap(10),
           ],
         ),

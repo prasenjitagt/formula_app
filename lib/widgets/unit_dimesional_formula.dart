@@ -61,35 +61,38 @@ class _UnitsDimensionalFormulaState extends State<UnitsDimensionalFormula> {
                 alignment: Alignment.center,
                 child: Text(
                   "DIMENSIONAL FORMULA",
-                  style: TextStyle(fontFamily: "lato", fontSize: 18),
+                  style: TextStyle(
+                      fontFamily: "lato",
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              UnitTextWidget(
+              EquationTextWidget(
                   equationText:
                       r"Pressure = Stress = Young's modulus = $ML^{-1}T^{-2}$"),
-              UnitTextWidget(
+              EquationTextWidget(
                   equationText: r"Work = Energy = Torque = $ML^{2}T^{-2}$"),
-              UnitTextWidget(equationText: r"Power = $ML^{2}T^{-3}$"),
-              UnitTextWidget(
+              EquationTextWidget(equationText: r"Power = $ML^{2}T^{-3}$"),
+              EquationTextWidget(
                   equationText:
                       r"Force Constant = Spring Constant = $MT^{-2}$"),
-              UnitTextWidget(
+              EquationTextWidget(
                   equationText:
                       r"Gravitational constant = $M^{-1}L^{3}T^{-2}$"),
-              UnitTextWidget(equationText: r"Latent Heat = $L^{2}T^{-2}$"),
-              UnitTextWidget(
+              EquationTextWidget(equationText: r"Latent Heat = $L^{2}T^{-2}$"),
+              EquationTextWidget(
                   equationText:
                       r"Electric Potential = $\frac{P}{I}$ = $ML^{2}T^{-3}A^{-1}$"),
-              UnitTextWidget(
+              EquationTextWidget(
                   equationText: r"Resistance = $ML^{2}T^{-3}A^{-2}$"),
-              UnitTextWidget(
+              EquationTextWidget(
                   equationText: r"Capacitance = $M^{-1}L^{-2}T^{4}A^{2}$"),
-              UnitTextWidget(
+              EquationTextWidget(
                   equationText: r"Permitivity = $M^{-1}L^{-3}T^{4}A^{2}$"),
-              UnitTextWidget(
+              EquationTextWidget(
                   equationText:
                       r"Angular Momentum = Planck's Constant = $ML^{2}T^{-1}$"),
             ],
