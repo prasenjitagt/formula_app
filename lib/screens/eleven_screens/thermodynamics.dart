@@ -5,6 +5,7 @@ import 'package:formula_app/widgets/double_tap_to_zoom_widget.dart';
 import 'package:formula_app/widgets/gap.dart';
 import 'package:formula_app/widgets/double_tap_to_zoom_network_widget.dart';
 import 'package:formula_app/widgets/my_divider.dart';
+import 'package:formula_app/widgets/thermo_equations_part_one.dart';
 
 class Thermodynamics extends StatefulWidget {
   const Thermodynamics({super.key, required this.appBarTitleText});
@@ -71,7 +72,34 @@ class _ThermodynamicsState extends State<Thermodynamics> {
             Gap(10),
             DoubleTapToZoomWidget(imageHeight: 250, imageName: "thermo2.jpg"),
             Gap(10),
-            MyDivider(dividerText: "THERMODYNAMIC PROCESSES")
+            MyDivider(dividerText: "THERMODYNAMIC PROCESSES"),
+            DoubleTapToZoomWidget(imageHeight: 350, imageName: "thermo3.jpg"),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 350, imageName: "thermo4.jpg"),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 500, imageName: "thermo5.jpg"),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 200, imageName: "thermo6.jpg"),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 450, imageName: "thermo7.jpg"),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 200, imageName: "thermo8.jpg"),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 500, imageName: "thermo9.jpg"),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 280, imageName: "thermo10.jpg"),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 250, imageName: "thermo11.jpg"),
+            Gap(10),
+            ThermoEquationsPartOne(),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 200, imageName: "thermo12.jpg"),
+            Gap(10),
+            DoubleTapToZoomWidget(imageHeight: 250, imageName: "thermo13.jpg"),
+            Gap(10),
+            MyDivider(dividerText: "WORK DONE FROM P-V GRAPH"),
+            DoubleTapToZoomWidget(imageHeight: 250, imageName: "thermo14.jpg"),
+            Gap(10),
           ],
         ),
       ),
