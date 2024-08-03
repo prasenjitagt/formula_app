@@ -1,7 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:formula_app/widgets/gap.dart';
 
 class DoubleTapToZoomNetworkWidget extends StatefulWidget {
   const DoubleTapToZoomNetworkWidget(

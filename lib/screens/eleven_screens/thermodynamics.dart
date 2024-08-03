@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/models/scroll_to_bottom.dart';
 import 'package:formula_app/widgets/custom_app_bar_title.dart';
-import 'package:formula_app/widgets/double_tap_to_zoom_widget.dart';
 import 'package:formula_app/widgets/gap.dart';
 import 'package:formula_app/widgets/double_tap_to_zoom_network_widget.dart';
 import 'package:formula_app/widgets/my_divider.dart';
@@ -68,37 +67,105 @@ class _ThermodynamicsState extends State<Thermodynamics> {
         controller: _myScrollController,
         child: const Column(
           children: [
-            DoubleTapToZoomWidget(imageHeight: 220, imageName: "thermo1.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 220, imageName: "thermo1.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 250, imageName: "thermo2.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 250, imageName: "thermo2.jpg"),
             Gap(10),
             MyDivider(dividerText: "THERMODYNAMIC PROCESSES"),
-            DoubleTapToZoomWidget(imageHeight: 350, imageName: "thermo3.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "thermo3.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 350, imageName: "thermo4.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "thermo4.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 500, imageName: "thermo5.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 500, imageName: "thermo5.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 200, imageName: "thermo6.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 200, imageName: "thermo6.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 450, imageName: "thermo7.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 450, imageName: "thermo7.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 200, imageName: "thermo8.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 200, imageName: "thermo8.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 500, imageName: "thermo9.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 500, imageName: "thermo9.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 280, imageName: "thermo10.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 280, imageName: "thermo10.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 250, imageName: "thermo11.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 250, imageName: "thermo11.jpg"),
             Gap(10),
             ThermoEquationsPartOne(),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 200, imageName: "thermo12.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 200, imageName: "thermo12.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 250, imageName: "thermo13.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 250, imageName: "thermo13.jpg"),
             Gap(10),
             MyDivider(dividerText: "WORK DONE FROM P-V GRAPH"),
-            DoubleTapToZoomWidget(imageHeight: 250, imageName: "thermo14.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 250, imageName: "thermo14.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 380, imageName: "thermo15.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 380, imageName: "thermo16.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 380, imageName: "thermo17.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 550, imageName: "thermo18.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "thermo19.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 430, imageName: "thermo20.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 220, imageName: "thermo21.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 430, imageName: "thermo22.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 430, imageName: "thermo23.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 430, imageName: "thermo24.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 520, imageName: "thermo25.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "thermo26.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 520, imageName: "thermo27.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 280, imageName: "thermo28.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 230, imageName: "thermo29.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 230, imageName: "thermo30.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "thermo31.jpg"),
+            Gap(10),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 800, imageName: "thermo32.jpg"),
             Gap(10),
           ],
         ),
