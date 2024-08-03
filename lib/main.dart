@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/dependency_injector.dart';
+import 'package:formula_app/screens/eleven_screens/fluids.dart';
 import 'package:formula_app/screens/home_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomeScreen());
+        // home: HomeScreen());
+        home: Fluids(appBarTitleText: "Test"));
   }
 }
