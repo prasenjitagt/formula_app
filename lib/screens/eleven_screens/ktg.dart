@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/models/scroll_to_bottom.dart';
 import 'package:formula_app/widgets/custom_app_bar_title.dart';
-import 'package:formula_app/widgets/double_tap_to_zoom_widget.dart';
 import 'package:formula_app/widgets/gap.dart';
 import 'package:formula_app/widgets/double_tap_to_zoom_network_widget.dart';
-import 'package:formula_app/widgets/my_divider.dart';
 
 class KTG extends StatefulWidget {
   const KTG({super.key, required this.appBarTitleText});
@@ -67,35 +65,50 @@ class _KTGState extends State<KTG> {
         controller: _myScrollController,
         child: const Column(
           children: [
-            DoubleTapToZoomWidget(imageHeight: 300, imageName: "ktg1.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "ktg1.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 300, imageName: "ktg2.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 300, imageName: "ktg2.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 350, imageName: "ktg3.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "ktg3.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 320, imageName: "ktg4.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 320, imageName: "ktg4.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 320, imageName: "ktg5.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 320, imageName: "ktg5.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 120, imageName: "ktg6.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 120, imageName: "ktg6.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 350, imageName: "ktg7.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "ktg7.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 350, imageName: "ktg8.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "ktg8.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 350, imageName: "ktg9.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 350, imageName: "ktg9.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 180, imageName: "ktg10.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 180, imageName: "ktg10.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 260, imageName: "ktg11.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 260, imageName: "ktg11.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 260, imageName: "ktg12.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 260, imageName: "ktg12.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 260, imageName: "ktg13.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 260, imageName: "ktg13.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 260, imageName: "ktg14.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 260, imageName: "ktg14.jpg"),
             Gap(10),
-            DoubleTapToZoomWidget(imageHeight: 100, imageName: "ktg15.jpg"),
+            DoubleTapToZoomNetworkWidget(
+                imageHeight: 100, imageName: "ktg15.jpg"),
             Gap(10),
           ],
         ),
