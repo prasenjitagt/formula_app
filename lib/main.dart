@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/dependency_injector.dart';
-import 'package:formula_app/screens/eleven_screens/ktg.dart';
+import 'package:formula_app/screens/eleven_screens/thermal_properties.dart';
 import 'package:formula_app/screens/home_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
@@ -23,6 +23,6 @@ class MyApp extends StatelessWidget {
     return const GetMaterialApp(
         debugShowCheckedModeBanner: false,
         // home: HomeScreen());
-        home: KTG(appBarTitleText: "Test"));
+        home: ThermalProperties(appBarTitleText: "Test"));
   }
 }
